@@ -1,0 +1,9 @@
+New log file opened at Thu Sep 15 15:42:58 BRT 2016 by 13852@gengar
+Sending msg to client play-fork-run-b3f9a829-400c-4ab0-97a5-4a2e51d35b40: DetachedLogEvent(LogMessage(debug,sbt server socket logs are in: /home/rafael/teste/play-java/.sbtserver/connections/master.log))
+Sending msg to client play-fork-run-b3f9a829-400c-4ab0-97a5-4a2e51d35b40: DetachedLogEvent(LogMessage(debug,sbt client logs are in: /home/rafael/teste/play-java/.sbtserver/connections/play-fork-run-b3f9a829-400c-4ab0-97a5-4a2e51d35b40.log))
+Reading next message from client.
+Sending msg to client play-fork-run-b3f9a829-400c-4ab0-97a5-4a2e51d35b40: DetachedLogEvent(LogMessage(debug,sbt general server logs are in: /home/rafael/teste/play-java/.sbtserver/master.log))
+Client play-fork-run-b3f9a829-400c-4ab0-97a5-4a2e51d35b40 EOF, shutting down.
+Stopping client.
+Dropping message (0,ReceivedResponse()) to dead client play-fork-run-b3f9a829-400c-4ab0-97a5-4a2e51d35b40
+Client play-fork-run-b3f9a829-400c-4ab0-97a5-4a2e51d35b40 thread exiting.

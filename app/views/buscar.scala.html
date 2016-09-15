@@ -1,0 +1,42 @@
+@import helper._
+@(cupons: List[CupomDesconto])
+@main("Buscar Nota") {
+    <div class="container">
+        <h3>Cupons</h3>
+        @form(action = routes.Application.buscar()){
+        <div class="form-inline">
+            <a href="@routes.Application.editar()" class="btn btn-primary">Voltar</a>
+            <button type="submit" class="btn btn-primary">buscar</button>
+            <div class="form-group">
+                <input type="text" class="form-control" id="exampleInputName2" placeholder="Nome da Nota"
+                       name="nomeDocumento">
+            </div>
+        </div>
+        }
+    </div>
+    @if(cupons.isEmpty){
+    <h3 class="container">Não há cupons cadastrados </h3>
+    }else {
+    <div class=" container">
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>cliente</th>
+                <th>valor</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                @for(cupom <- cupons){
+            <tr>
+                <td>@cupom.id</td>
+                <td>@cupom.nomeDocumento</td>
+                <td>R$ @cupom.valor</td>
+            </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+    }
+}
